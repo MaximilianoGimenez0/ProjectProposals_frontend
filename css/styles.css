@@ -16,7 +16,7 @@ body {
 body {
     min-height: 100vh;
     /* Ocupa al menos toda la pantalla */
-    background: linear-gradient(to bottom, #ffffff, #aff3ff8c ,#aff3ff8c);
+    background: linear-gradient(to bottom, #ffffff, #aff3ff8c, #aff3ff8c);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@ section {
 
 nav {
     height: 100px;
-    
+
 }
 
 /* === TIPOGRAFÍA Y TÍTULOS === */
@@ -343,4 +343,40 @@ a:hover {
     height: 150px;
     z-index: -9999;
     pointer-events: none;
+}
+
+/* Contenedor de las alertas */
+.contenedor-alertas {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 380px;
+    max-width: calc(100vw - 40px);
+
+    pointer-events: none;
+}
+
+/* Las alertas sí reciben clic */
+.contenedor-alertas .alert {
+    pointer-events: auto;
+    margin: 0;
+    animation: aparecerAlerta .3s ease;
+}
+
+@keyframes aparecerAlerta {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

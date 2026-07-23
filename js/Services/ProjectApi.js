@@ -6,12 +6,16 @@ export async function createProject(title, description, estimatedAmount, estimat
   const body = {
     Title: title,
     Description: description,
-    EstimatedAmount: estimatedAmount,
-    EstimatedDuration: estimatedDuration,
+    Amount: estimatedAmount,
+    Duration: estimatedDuration,
     Area: area,
     Type: type,
-    CreateBy: user
+    User: user
   };
+
+  console.log("========== REQUEST BODY ==========");
+  console.log(body);
+  console.log("==================================");
 
   try {
     const response = await fetch(baseUrl, {
@@ -264,7 +268,7 @@ export async function getUserNextSteps(roleId) {
       response.title = project.title;
       response.description = project.description;
       response.status = project.status;
-      response.duration =project.duration;
+      response.duration = project.duration;
       response.type = project.type;
       response.area = project.area;
       response.user = project.user;
