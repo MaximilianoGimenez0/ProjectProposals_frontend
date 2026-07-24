@@ -1,20 +1,20 @@
 # 🚀 Project Proposals Dashboard
 
+> Una aplicación frontend modular y ligera diseñada para la gestión, presentación y seguimiento de propuestas de proyectos técnicos y académicos.
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-> Una aplicación frontend modular y ligera diseñada para la gestión, presentación y seguimiento de propuestas de proyectos técnicos y académicos.
-
 ---
 
-## 📸 Preview
+# 📸 Preview
 
 > 💡 *Espacio reservado para capturas de pantalla del dashboard, vistas de proyectos o un GIF de demostración.*
 
 ---
 
-## 📖 Descripción
+# 📖 Descripción
 
 Este repositorio contiene la capa de presentación (Frontend) de un sistema de **Project Proposals**. La aplicación permite a los usuarios gestionar propuestas de desarrollo, revisar su estado actual y categorizarlas por área técnica. 
 
@@ -22,7 +22,7 @@ El mayor valor de este proyecto radica en su **arquitectura y calidad técnica**
 
 ---
 
-## ✨ Características Principales
+# ✨ Características Principales
 
 * **Gestión de Propuestas:** Visualización detallada y presentación de nuevos proyectos (`PresentProject.js`).
 * **Sistema de Usuarios:** Manejo de perfiles y sesiones (`User.js`, `Users.js`).
@@ -32,7 +32,7 @@ El mayor valor de este proyecto radica en su **arquitectura y calidad técnica**
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+# 🛠️ Tecnologías Utilizadas
 
 ### Frontend
 * **JavaScript (ES6+)**: Lógica core, modularidad y manipulación del DOM sin dependencias.
@@ -45,7 +45,7 @@ El mayor valor de este proyecto radica en su **arquitectura y calidad técnica**
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
+# 🏗️ Arquitectura del Proyecto
 
 El proyecto sigue una arquitectura por capas muy clara. Esta separación aísla las responsabilidades, lo que facilita el mantenimiento, el testing y prepararía el terreno para una eventual migración a un framework declarativo.
 
@@ -63,25 +63,25 @@ graph TD
 
 ---
 
-## 📂 Estructura del Proyecto
+# 📂 Estructura del Proyecto
 
 La organización de directorios refleja un enfoque escalable orientado a dominios:
 
 ```text
 ProjectProposals_frontend-main/
 ├── index.html            # Entry point de la aplicación
-├── css/
+├── 📁 css/
 │   └── styles.css        # Hoja de estilos global
-└── js/
+└── 📁 js/
     ├── main.js           # Orquestador principal e inicialización
-    ├── Components/       # Capa de Interfaz y Lógica UI
+    ├── 📁 Components/       # Capa de Interfaz y Lógica UI
     │   ├── Generic.js    # Componentes base reutilizables
     │   ├── PresentProject.js
     │   └── User.js
-    ├── Scripts/          # Utilidades y Helpers UI
+    ├── 📁 Scripts/          # Utilidades y Helpers UI
     │   ├── Badges.js     # Generación de etiquetas visuales
     │   └── Feedback.js   # Manejo de alertas, errores y modales
-    └── Services/         # Capa de Dominio y Comunicación (API)
+    └── 📁 Services/         # Capa de Dominio y Comunicación (API)
         ├── ProjectApi.js # Abstracción de endpoints de proyectos
         ├── Users.js      # Abstracción de endpoints de usuarios
         ├── Area.js       # Endpoints de áreas técnicas
@@ -91,7 +91,7 @@ ProjectProposals_frontend-main/
 
 ---
 
-## 🧠 Decisiones Técnicas
+# 🧠 Decisiones Técnicas
 
 * **Desacoplamiento de la API (Service Layer):** Se diseñó un directorio `Services/` dedicado exclusivamente a las peticiones HTTP. Esto evita acoplar la lógica de red con la manipulación de la vista, permitiendo cambiar la URL base, headers o la implementación fetch en un solo lugar (`informationApi.js`).
 * **Modularidad Vanilla:** El uso de módulos separados para componentes UI (`js/Components/`) demuestra la aplicación de principios SOLID en JavaScript puro, evitando el "Spaghetti Code" común en proyectos sin frameworks.
@@ -99,7 +99,7 @@ ProjectProposals_frontend-main/
 
 ---
 
-## 🚀 Instalación y Configuración
+# 🚀 Instalación y Configuración
 
 1. **Clonar el repositorio:**
    ```bash
@@ -119,7 +119,7 @@ ProjectProposals_frontend-main/
 
 ---
 
-## 🚀 Mejoras Futuras
+# 🚀 Mejoras Futuras
 
 * Implementación de un bundler (como Vite) para optimización, minificación de assets y ofuscación de código de cara a producción.
 * Adición de tipado estático progresivo mediante JSDoc para mejorar la experiencia de desarrollo (DX).
@@ -127,12 +127,14 @@ ProjectProposals_frontend-main/
 
 ---
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
-**Maxi**  
-*Fullstack Developer | Estudiante de Ingeniería en Informática*  
-📍 Buenos Aires, Argentina  
-🌎 Trilingüe (Español, Inglés, Portugués)
+**Maximiliano Giménez**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil-aqui)
+**Full Stack Developer**
+
+React • TypeScript • ASP.NET Core • SQL Server • Android (Jetpack Compose)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tu-usuario)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=Reverbnation&logoColor=white)](https://tu-portfolio.com)
